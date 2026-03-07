@@ -1,47 +1,49 @@
 ---
-sidebar_position: 1
+slug: /
+title: 🏠 ДомLike.Калькулятор — Документация
+sidebar_label: Главная
 ---
 
-# Tutorial Intro
+# ДомLike.Калькулятор
 
-Let's discover **Docusaurus in less than 5 minutes**.
+**Калькулятор расчёта стоимости материалов для строительства домов**
 
-## Getting Started
+<div className="hero hero--primary" style={{marginBottom: '2rem'}}>
+  <div className="container">
+    <h1 className="hero__title">🧮 ДомLike.Калькулятор</h1>
+    <p className="hero__subtitle">
+      Точный расчёт материалов для домов из бруса, каркасных и пеноблоков
+    </p>
+  </div>
+</div>
 
-Get started by **creating a new site**.
+## 🚀 Возможности
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+| Функция | Описание |
+|---------|----------|
+| 🧮 **Точный расчёт** | Автоматический подсчёт объёмов материалов по заданным параметрам |
+| 🪵 **Типы конструкций** | Брус, каркас, пеноблоки — выбирайте подходящий тип |
+| 💰 **Смета работ** | Расчёт стоимости материалов + стоимость работ |
+| 📊 **Детализация** | Поэлементная разбивка по всем конструктивным элементам |
+| 💾 **Сохранение** | Сохраняйте расчёты как шаблоны для повторного использования |
+| 📥 **Экспорт** | Выгрузка результатов в Excel (XLSX) |
+| 👥 **Мультипользовательность** | Система регистрации и разделения доступа |
 
-### What you'll need
+## 🎯 Для кого этот калькулятор?
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- 👷 **Строительные компании** — быстрая оценка затрат на объект
+- 🏡 **Частные застройщики** — планирование бюджета строительства
+- 📐 **Проектировщики** — проверка спецификаций материалов
+- 💼 **Снабженцы** — формирование заказа на материалы
 
-## Generate a new site
+## 🚀 Быстрый старт
 
-Generate a new Docusaurus site using the **classic template**.
+1. Откройте [🧮 Калькулятор](https://vkrasiv.ru)
+2. Зарегистрируйтесь или войдите в систему
+3. Выберите тип дома и введите параметры
+4. Нажмите **"Рассчитать"** и получите детальную смету
 
-The classic template will automatically be added to your project after you run the command:
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+---
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+> **vkrasiv.ru** — умный калькулятор для умного строительства 🏗️✨

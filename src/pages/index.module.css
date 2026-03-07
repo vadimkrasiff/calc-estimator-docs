@@ -1,13 +1,11 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+/* src/pages/index.module.css */
 
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, #1b5e20 100%);
 }
 
 @media screen and (max-width: 996px) {
@@ -20,4 +18,60 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons .button {
+    width: 100%;
+    max-width: 280px;
+  }
+  .margin-left--md {
+    margin-left: 0 !important;
+    margin-top: 1rem;
+  }
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  background: var(--ifm-background-color);
+}
+
+.feature {
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.feature:hover {
+  transform: translateY(-4px);
+}
+
+.feature h3 {
+  margin: 1rem 0 0.5rem;
+  color: var(--ifm-heading-color);
+}
+
+.feature p {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Анимация иконки при наведении */
+.feature [role="img"] {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.feature:hover [role="img"] {
+  transform: scale(1.1);
 }

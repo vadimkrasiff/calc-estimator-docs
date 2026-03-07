@@ -17,7 +17,6 @@ const config = {
   projectName: 'vkrasiv-docs',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
   i18n: {
     defaultLocale: 'ru',
@@ -42,10 +41,10 @@ const config = {
 
   themeConfig: {
     navbar: {
-      title: 'Документация',
+      title: '',
       logo: {
         alt: 'Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         {
@@ -65,6 +64,12 @@ const config = {
       darkTheme: darkCodeTheme,   // ← ИСПОЛЬЗУЙ ПЕРЕМЕННЫЕ
     },
   },
+
+  markdown: {
+  hooks: {
+    onBrokenMarkdownLinks: 'warn',
+  },
+},
 };
 
 module.exports = config;
