@@ -9,7 +9,8 @@ const sidebars = {
     'materials',
     'users',
     'profile',
-    'register'
+    'register',
+    'deploy'
   ],
 };
 
