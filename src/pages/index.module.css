@@ -1,77 +1,57 @@
-/* src/pages/index.module.css */
-
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, #1b5e20 100%);
+.page {
+  padding-block: clamp(1.5rem, 5vw, 4rem);
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.intro,
+.guide {
+  border: 1px solid var(--domlike-line);
+  border-radius: 1rem;
+  background: var(--domlike-surface);
 }
 
-.buttons {
+.intro {
+  padding: clamp(1.25rem, 5vw, 3rem);
+}
+
+.intro h1 {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  letter-spacing: -0.025em;
+}
+
+.intro p,
+.guide p {
+  color: var(--domlike-muted);
+}
+
+.actions {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
   flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
-@media screen and (max-width: 768px) {
-  .buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-  .buttons .button {
-    width: 100%;
-    max-width: 280px;
-  }
-  .margin-left--md {
-    margin-left: 0 !important;
-    margin-top: 1rem;
-  }
+.guides {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
-  background: var(--ifm-background-color);
+.guide {
+  padding: 1.25rem;
+  color: var(--ifm-font-color-base);
 }
 
-.feature {
-  padding: 1rem;
-  text-align: center;
-  transition: transform 0.2s ease;
+.guide:hover {
+  border-color: var(--ifm-color-primary);
+  background: var(--domlike-accent);
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
 }
 
-.feature:hover {
-  transform: translateY(-4px);
+.guide h2 {
+  font-size: 1.125rem;
 }
 
-.feature h3 {
-  margin: 1rem 0 0.5rem;
-  color: var(--ifm-heading-color);
-}
-
-.feature p {
-  color: var(--ifm-color-emphasis-700);
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-/* Анимация иконки при наведении */
-.feature [role="img"] {
-  transition: transform 0.3s ease;
-  display: inline-block;
-}
-
-.feature:hover [role="img"] {
-  transform: scale(1.1);
+.guide p {
+  margin: 0;
 }

@@ -3,15 +3,16 @@
 const { themes } = require('prism-react-renderer');
 const lightCodeTheme = themes.github;
 const darkCodeTheme = themes.dracula;
+const isHostedHelp = process.env.DOCUSAURUS_HOSTED_HELP === '1';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Документация проекта',
+  title: 'Документация ДомЛайка',
   tagline: 'Калькулятор стоимости строительства',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/domlike-mark.png',
 
-  url: 'https://docs.vkrasiv.ru',
-  baseUrl: '/',
+  url: isHostedHelp ? 'https://domlike.vkrasiv.online' : 'https://docs.vkrasiv.ru',
+  baseUrl: isHostedHelp ? '/help/' : '/',
 
   organizationName: 'vadimkrasiff',
   projectName: 'calc-estimator-docs',
@@ -29,6 +30,7 @@ const config = {
       {
         docs: {
           sidebarPath: './sidebars.js',
+          ...(isHostedHelp ? { exclude: ['deploy.md'] } : {}),
           editUrl: 'https://github.com/vadimkrasiff/calc-estimator-docs/tree/main/',
         },
         blog: false,
@@ -43,8 +45,8 @@ const config = {
     navbar: {
       title: '',
       logo: {
-        alt: 'Logo',
-        src: 'img/logo.png',
+        alt: 'ДомЛайк',
+        src: 'img/domlike-logo.png',
       },
       items: [
         {
@@ -53,11 +55,17 @@ const config = {
           position: 'left',
           label: 'Документация',
         },
+        {
+          href: 'https://domlike.vkrasiv.online/',
+          label: 'Открыть калькулятор',
+          position: 'right',
+          target: '_self',
+        },
       ],
     },
     footer: {
-      style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} vkrasiv.ru`,
+      style: 'light',
+      copyright: `© ${new Date().getFullYear()} ДомЛайк`,
     },
     prism: {
       theme: lightCodeTheme,      // ← ИСПОЛЬЗУЙ ПЕРЕМЕННЫЕ

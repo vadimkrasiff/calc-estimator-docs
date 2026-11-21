@@ -10,7 +10,7 @@ const sidebars = {
     'users',
     'profile',
     'register',
-    'deploy'
+    ...(process.env.DOCUSAURUS_HOSTED_HELP === '1' ? [] : ['deploy'])
   ],
 };
 
