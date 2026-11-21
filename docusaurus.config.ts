@@ -14,7 +14,7 @@ const config = {
   baseUrl: '/',
 
   organizationName: 'vadimkrasiff',
-  projectName: 'vkrasiv-docs',
+  projectName: 'calc-estimator-docs',
 
   onBrokenLinks: 'throw',
 
@@ -29,7 +29,7 @@ const config = {
       {
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/ТВОЙ_USERNAME/vkrasiv-docs/tree/main/',
+          editUrl: 'https://github.com/vadimkrasiff/calc-estimator-docs/tree/main/',
         },
         blog: false,
         theme: {
