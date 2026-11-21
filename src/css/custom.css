@@ -66,6 +66,11 @@
   border-radius: 0.625rem;
 }
 
+.markdown td a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .footer {
   --ifm-footer-background-color: var(--domlike-surface);
   --ifm-footer-color: var(--domlike-muted);
